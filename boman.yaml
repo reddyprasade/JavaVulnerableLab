@@ -1,0 +1,15 @@
+Auth:
+  project_token: "b07830b5-3604-411c-9552-2229076fb7a1"
+  customer_token:  "1f3dc7b3-cb4e-4eb9-b5ee-c780947f12e3" #devtokens
+  
+SCA:
+  language: "java" 
+
+SAST:
+  language: "semgrep" 
+
+DAST:
+  type: "WEB" ## API, WEB, WEB-ADV
+  URL: "http://devapi.boman.ai" 
+
+Secret_Scan: True
