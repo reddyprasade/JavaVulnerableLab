@@ -11,6 +11,6 @@ SAST:
 
 DAST:
   type: "WEB" ## API, WEB, WEB-ADV
-  URL: "http://devapi.boman.ai" 
+  URL: "https://www.clientoclarify.com/" 
 
-Secret_Scan: True
+#Secret_Scan: True
