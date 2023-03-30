@@ -10,6 +10,7 @@ SCA:
 
 SAST:
   language: "java"
+  target: JavaVulnerableLab/jar_files/
   # SAST
 
 # DAST:
