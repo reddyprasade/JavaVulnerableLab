@@ -1,14 +1,23 @@
-on: [push]
+name: Java CI
 
+on:
+  #Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 jobs:
-  boman_scan:
+  build:
+
     runs-on: ubuntu-latest
-    name: Test Job
+    
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      # Runs a single command using the runners shell
-      - name: Install packages
-        run: sudo pip install boman-cli
-      - name: Run scan  
-        run: sudo boman-cli -a run 
+    - uses: actions/checkout@v2
+   
+    - name: Boman SAST
+      run: |
+        pip install --extra-index-url https://test.pypi.org/simple/ boman-cli-uat==0.12
+    - name:  Run a multi-line script
+      run: |
+       boman-cli-uat -a run 
