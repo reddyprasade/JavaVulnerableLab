@@ -7,14 +7,12 @@ Auth:
   
 SCA:
   language: "java" 
-
 SAST:
   language: "java"
   target: JavaVulnerableLab/jar_files/
-  # SAST
 
-# DAST:
-#   type: "WEB" ## API, WEB, WEB-ADV
-#   URL: "https://www.clientoclarify.com/" 
+DAST:
+  type: "WEB" ## API, WEB, WEB-ADV
+  URL: "http://www.cysecurity.org"
 
-#Secret_Scan: True
+Secret_Scan: True
