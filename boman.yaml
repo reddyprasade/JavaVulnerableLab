@@ -13,6 +13,6 @@ SAST:
 
 DAST:
   type: "WEB" ## API, WEB, WEB-ADV
-  URL: "http://www.cysecurity.org"
+  URL: "https://devapi.boman.ai/"
 
 Secret_Scan: True
