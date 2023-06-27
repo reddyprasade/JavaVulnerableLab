@@ -11,9 +11,8 @@ SCA:
 SAST:
   language: "java"
   target: JavaVulnerableLab/jar_files/
-
-DAST:
-  type: "WEB" ## API, WEB, WEB-ADV
-  URL: "https://devapi.boman.ai/"
+# DAST:
+#   type: "WEB" ## API, WEB, WEB-ADV
+#   URL: "https://devapi.boman.ai/"
 
 Secret_Scan: True
